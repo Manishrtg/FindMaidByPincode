@@ -35,4 +35,8 @@ public class OwnerService {
         owner.setPincode(pincode);
         return ownerRepository.save(owner);
     }
+
+    public Owner findByOwnerId(String userName) {
+        return ownerRepository.findByUsername(userName);  // Return the Owner found by username
+    }
 }

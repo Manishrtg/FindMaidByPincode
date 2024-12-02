@@ -32,4 +32,5 @@ public class OwnerLoginController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }
     }
+
 }
